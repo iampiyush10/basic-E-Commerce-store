@@ -1,0 +1,219 @@
+* {
+  margin: 1rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: max-content;
+  width: 100%;
+  flex-direction: column;
+  overflow-x: hidden;
+  border-left: 0.51rem solid black;
+}
+
+/* .main {
+  height: auto;
+  width: 100%;
+  border-left: 3px solid black;
+} */
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 90%;
+  width: 90%;
+  /* border-left: 3px solid black !important; */
+  /* padding: 3rem 4rem; */
+  flex-direction: column;
+}
+
+section p {
+  padding: 3rem;
+  font-size: 4.5rem;
+  text-align: center;
+  background-image: linear-gradient(to right, blue, purple, pink);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.searchbox {
+  display: flex;
+}
+
+#searchbox {
+  font-size: 3.5rem;
+  padding: 1rem 2rem;
+  margin-left: 5rem;
+  width: 80%;
+}
+
+.btn {
+  height: inherit;
+  width: max-content;
+  background-color: rgb(4, 4, 139);
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  color: white;
+  font-size: 5rem !important;
+}
+
+.cards {
+  height: max-content;
+  width: 100%;
+  /* background-color: red; */
+  margin-top: 3rem;
+  /* padding: 2rem 8rem; */
+  padding: 3rem 4rem;
+
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+}
+
+div.card {
+  height: max-content;
+  width: 16rem;
+  padding-top: 1rem;
+  border-radius: 1rem;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+div.card:hover {
+  transform: scale(1.3);
+  transition: all ease 0.3s;
+}
+
+img.card__image {
+  height: max-content;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 5px rgb(170, 169, 169), 0px 0px 5px rgb(192, 187, 187),
+    0px 0px 5px rgb(197, 192, 192), 0px 0px 5px rgb(173, 170, 170);
+}
+
+span.card__text {
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.deals {
+  height: max-content;
+  width: max-content;
+}
+
+.deals h1 {
+  margin: 2rem 8rem;
+  font-size: 4rem;
+}
+
+/* Code */
+
+.parentContainer {
+  height: 100rem;
+  width: 100rem;
+  overflow: hidden;
+  border-radius: 2rem;
+  padding: 3rem 4rem;
+}
+
+.carousel {
+  height: 70rem;
+  width: 100rem;
+  display: flex;
+  transition: all 3s 4s;
+  /* overflow: hidden; */
+  animation-name: carousel;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translate(-300%);
+  }
+}
+.slide1 {
+  /* height: max-content; */
+  min-width: 100rem;
+  /* background-color: blue; */
+  color: White;
+  font-size: 4rem;
+  font-weight: 800;
+  background-image: url("https://cdn.thewirecutter.com/wp-content/uploads/2019/05/dryclean-1024.jpg?auto=webp&quality=75&crop=1.91:1&width=1200");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide2 {
+  height: 100%;
+  min-width: 100rem;
+  background-color: green;
+  color: White;
+  font-size: 4rem;
+  font-weight: 800;
+  background-image: url("https://img.freepik.com/premium-photo/interior-real-laundry-room-with-washing-machine-home_566707-2617.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide3 {
+  height: 100%;
+  min-width: 100rem;
+  background-color: green;
+  color: White;
+  font-size: 4rem;
+  font-weight: 800;
+  background-image: url("https://thumbs.dreamstime.com/b/office-cleaning-service-concept-supplies-67540986.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide4 {
+  height: 100%;
+  min-width: 100rem;
+  background-color: grey;
+  color: White;
+  font-size: 4rem;
+  font-weight: 800;
+  background-image: url("https://img.freepik.com/premium-photo/laundry-room-with-washing-machine_566707-2130.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
